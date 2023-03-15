@@ -1,0 +1,11 @@
+img {
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  }
+
+.mermaid {
+	display: flex;
+	align-items: center; justify-content: center
+}

@@ -1,0 +1,48 @@
+baseURL = "https://gsora.xyz/"
+languageCode = "en-us"
+title = "Gianguido Sorà"
+
+theme = "hugo-bearblog"
+enableEmoji = true
+
+paginate = 8
+
+summaryLength = 1
+pygmentsCodeFences = true
+
+enableRobotsTXT = true
+
+[markup.blackFriday]
+smartypants = true
+
+[outputs]
+  home = ["HTML"]
+
+[params]
+  favicon = "img/favicon.png"
+  author = "Gianguido (gsora) Sorà" # You can also set author in post front matter individually
+  since = "2021"
+  copyright = "Gianguido Sorà"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Enable user to embed HTML snippets in Markdown content
+
+[markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = 'native'
+    tabWidth = 4
+
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+

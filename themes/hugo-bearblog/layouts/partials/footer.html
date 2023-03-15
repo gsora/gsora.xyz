@@ -1,0 +1,15 @@
+{{ if ne .Site.Params.hideMadeWithLine true }}
+<div id="hugobear" style="font-size: 0.6rem">
+	<p>Made with ❤️ </p>
+
+	<p>
+	{{ if .Site.Params.since }}
+		&copy; {{ .Site.Params.copyright }} {{ .Site.Params.since }} - {{ .Site.LastChange.Format "2006" }}
+	{{ else }}
+  		&copy; {{ .Site.Params.copyright }} {{ .Site.LastChange.Format "2006" }}
+  	{{ end }}
+	</p>
+
+	<p>Design based on <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a></p>
+</div>
+{{ end }}

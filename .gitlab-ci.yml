@@ -1,0 +1,52 @@
+stages:
+  - build-cv
+  - optimize
+  - build
+  - deploy
+build:
+  stage: build
+  image: jojomi/hugo
+  script:
+  - hugo version
+  - hugo -d public_html
+  artifacts:
+    paths:
+    - public_html
+  only:
+  - master
+optimize:
+  stage: optimize
+  image: ubuntu:latest
+  script:
+  - apt update && apt install -y libavif-bin webp
+  - bash ./optimg.sh
+  artifacts:
+    paths:
+    - static
+  only:
+  - master
+build-cv:
+  stage: build-cv
+  image:
+    name: pandoc/latex
+    entrypoint: ["/bin/sh", "-c"]
+  script:
+    - pandoc content/cv/index.md  --template content/cv/latex.template --pdf-engine xelatex -V geometry:margin=1in  -o static/cv.pdf
+  artifacts:
+    paths:
+      - "static/cv.pdf"
+  only:
+  - master
+deploy:
+  stage: deploy
+  image: alpine:latest
+  before_script:
+    - apk update && apk add openssh-client bash rsync
+  script: 
+  - eval $(ssh-agent -s)
+  - mkdir -p ~/.ssh
+  - bash -c 'ssh-add <(echo "${SSH_PRIVATE_KEY}")'
+  - ssh-keyscan -p "${SSH_PORT}" "${SSH_HOST}" > ~/.ssh/known_hosts
+  - rsync -hrvz --delete --exclude=_ -e "ssh -p ${SSH_PORT}" public_html/ "ghactions"@"${SSH_HOST}":"${SSH_USER_HOST_LOCATION}" 
+  only:
+  - master

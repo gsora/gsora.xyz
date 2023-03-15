@@ -1,0 +1,8 @@
+.hugo_build.lock
+.DS_Store
+public
+*.icloud
+content/cv/index.pdf
+.gitlab-ci-local
+*.webp
+*.avif

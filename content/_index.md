@@ -1,0 +1,22 @@
+# 👋
+
+<figure>
+    <picture>
+      <source srcset="/img/avatar.webp" type="image/webp">
+      <img src="/img/avatar.jpg" loading="lazy" decoding="async" style="width: 30%; margin-left: 10px; margin-bottom: 10px; border-radius: 10px;" align="right">
+    </picture>
+</figure>
+
+Gianguido here, you just reached my web page 🤠
+
+I'm a software developer living in sunny Italy, currently...
+ - distributing the Ethereum validators network at [Obol.tech](https://obol.tech)
+ - helping create a better **portable** secure enclave with the [betrusted.io](https://betrusted.io) folks
+
+In my free time I usually go out for bike rides --- on trails, at bike parks --- or hack on side-projects, either physical or digital ones.
+
+The best way to reach me is by beaming a [*digital postcard*](mailto:gsora+nsc@disroot.org), making sure to attach a cute picture of your pet 🐕
+
+If you wanna talk business you can find an updated curriculum vitae [here](/cv). 
+
+<a rel="me" style="display: none;" href="https://mastodon.wallera.computer/@gsora">Mastodon</a>
