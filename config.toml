@@ -21,7 +21,6 @@ smartypants = true
 [params]
   favicon = "img/favicon.png"
   author = "Gianguido (gsora) Sorà" # You can also set author in post front matter individually
-  since = "2021"
   copyright = "Gianguido Sorà"
 
 [markup]
