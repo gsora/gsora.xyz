@@ -13,7 +13,7 @@ build:
     paths:
     - public_html
   only:
-  - master
+  - main
 optimize:
   stage: optimize
   image: ubuntu:latest
@@ -24,7 +24,7 @@ optimize:
     paths:
     - static
   only:
-  - master
+  - main
 build-cv:
   stage: build-cv
   image:
@@ -36,7 +36,7 @@ build-cv:
     paths:
       - "static/cv.pdf"
   only:
-  - master
+  - main
 deploy:
   stage: deploy
   image: alpine:latest
@@ -49,4 +49,4 @@ deploy:
   - ssh-keyscan -p "${SSH_PORT}" "${SSH_HOST}" > ~/.ssh/known_hosts
   - rsync -hrvz --delete --exclude=_ -e "ssh -p ${SSH_PORT}" public_html/ "ghactions"@"${SSH_HOST}":"${SSH_USER_HOST_LOCATION}" 
   only:
-  - master
+  - main
