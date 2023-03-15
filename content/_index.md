@@ -2,8 +2,8 @@
 
 <figure>
     <picture>
-      <source srcset="/img/avatar.webp" type="image/webp">
-      <img src="/img/avatar.jpg" loading="lazy" decoding="async" style="width: 30%; margin-left: 10px; margin-bottom: 10px; border-radius: 10px;" align="right">
+      <source srcset="/img/avatar.avif" type="image/avif">
+      <img src="/img/avatar.png" loading="lazy" decoding="async" style="width: 30%; margin-left: 10px; margin-bottom: 10px; border-radius: 10px;" align="right">
     </picture>
 </figure>
 
