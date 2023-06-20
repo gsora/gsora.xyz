@@ -13,7 +13,9 @@ draft: false
 
 ## Work experience {#work-experience .unnumbered}
 
- - **Ignite (previously Tendermint)** (2021 - 2022) --- working on distributed ledger technologies. Shipped the first iteration of [Emeris](https://emeris.com) backend, and some fixes to the Cosmos SDK, worked on SSI and DIDs.
+ - **Obol** (2023) --- working on pioneering Distributed Validator technologies. Delivered backend solution and hands-on protocol engineering for the Charon distributed validator client software, as well as back-end engineering for soon-to-be announced products.
+
+ - **Ignite (previously Tendermint)** (2021 - 2022) --- worked on distributed ledger technologies. Shipped the first iteration of [Emeris](https://emeris.com) backend, and some fixes to the Cosmos SDK, worked on SSI and DIDs.
 
  - **Commercio.network** (2019 - 2021) --- worked as an independent contractor on Cosmos SDK-based blockchain technologies, shipped the first project's `mainnet` after coordinating a testing/correctness effort lasting multiple months, as well as complimentary REST services.
 
@@ -21,7 +23,7 @@ draft: false
 
 Go, Linux systems, git, Kubernetes, REST API design.
 
-Currently learning: Rust, ARM architecture, secure enclaves design.
+Currently learning: Rust, secure enclave design.
 
 I also have some experience with C and Swift.
 
@@ -47,7 +49,7 @@ I also have some experience with C and Swift.
 patches to various projects.\
 I contributed to the Go's [golang.org/x/sys/unix](golang.org/x/sys/unix)
 package, as well as the Gentoo's Portage tree.
- - **Bikes** - I'm a mountain biker with a soft spot for gravel riding. I enjoy fixing and maintaining my (small) bike fleet.
+ - **Bikes** - I'm a mountain biker with a soft spot for gravel riding. I enjoy maintaining my (small) bike fleet.
 
 ## Education {#education .unnumbered}
 
