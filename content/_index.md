@@ -9,8 +9,8 @@
 
 Gianguido here, you just reached my web page 🤠
 
-I'm a software developer living in sunny Italy, currently...
- - distributing the Ethereum validators network at [Obol.tech](https://obol.tech)
+I'm a [software developer](https://github.com/gsora) living in sunny Italy, currently...
+ - distributing the Ethereum validator network at [Obol.tech](https://obol.tech)
  - helping create a better **portable** secure enclave with the [betrusted.io](https://betrusted.io) folks
 
 In my free time I usually go out for bike rides --- on trails, at bike parks --- or hack on side-projects, either physical or digital ones.
