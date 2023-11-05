@@ -1,5 +1,8 @@
 # 👋
 
+<script data-goatcounter="https://gsora.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
 <figure>
     <picture>
       <source srcset="/img/avatar.avif" type="image/avif">
