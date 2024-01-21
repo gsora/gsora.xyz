@@ -22,4 +22,4 @@ The best way to reach me is by beaming a [*digital postcard*](mailto:gsora+nsc@d
 
 If you wanna talk business you can find an **updated curriculum vitae** [here](/cv). 
 
-<a rel="me" style="display: none;" href="https://mastodon.wallera.computer/@gsora">Mastodon</a>
+<a rel="me" style="display: none;" href="https://nso.group/@gsora">Mastodon</a>
