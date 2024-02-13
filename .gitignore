@@ -6,3 +6,4 @@ content/cv/index.pdf
 .gitlab-ci-local
 *.webp
 *.avif
+static/cv.pdf
