@@ -5,6 +5,7 @@ on:
     branches:
       - main
   pull_request:
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -14,16 +15,21 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.120.3'
+          hugo-version: "0.120.3"
           extended: true
 
       - name: Build
         run: hugo --minify
+
+      - name: Build CV pdf
+        uses: docker://pandoc/latex:2.9
+        with:
+          args: content/cv/index.md  --template content/cv/latex.template --pdf-engine xelatex -V geometry:margin=1in  -o static/cv.pdf
 
       - name: Tailscale
         uses: tailscale/github-action@v2
@@ -36,9 +42,9 @@ jobs:
         if: github.ref == 'refs/heads/main'
         uses: appleboy/scp-action@v0.1.4
         with:
-            host: ${{ secrets.HOST }}
-            username: ${{ secrets.USERNAME }}
-            key: ${{ secrets.SSH_PRIVKEY }}
-            port: ${{ secrets.PORT }}
-            source: public/*
-            target: /home/gsora/websites/gsora.xyz/
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVKEY }}
+          port: ${{ secrets.PORT }}
+          source: public/*
+          target: /home/gsora/websites/gsora.xyz/
