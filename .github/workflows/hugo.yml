@@ -31,20 +31,20 @@ jobs:
         with:
           args: content/cv/index.md  --template content/cv/latex.template --pdf-engine xelatex -V geometry:margin=1in  -o static/cv.pdf
 
-      # - name: Tailscale
-      #   uses: tailscale/github-action@v2
-      #   with:
-      #     oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
-      #     oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
-      #     tags: tag:ci
+      - name: Tailscale
+        uses: tailscale/github-action@v2
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
 
-      # - name: Deploy
-      #   if: github.ref == 'refs/heads/main'
-      #   uses: appleboy/scp-action@v0.1.4
-      #   with:
-      #     host: ${{ secrets.HOST }}
-      #     username: ${{ secrets.USERNAME }}
-      #     key: ${{ secrets.SSH_PRIVKEY }}
-      #     port: ${{ secrets.PORT }}
-      #     source: public/*
-      #     target: /home/gsora/websites/gsora.xyz/
+      - name: Deploy
+        if: github.ref == 'refs/heads/main'
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_PRIVKEY }}
+          port: ${{ secrets.PORT }}
+          source: public/*
+          target: /home/gsora/websites/gsora.xyz/
