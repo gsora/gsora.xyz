@@ -14,7 +14,7 @@ draft: false
  
 ## Work experience {#work-experience .unnumbered}
 
- - **Obol** (2023) --- working Distributed Validator technology. Delivered hands-on protocol engineering for the Charon distributed validator client software, as well as back-end engineering for custom-build large-scale customers. Tech leading the Core Protocol team, and delivered the first fully automatically-tested, stable version of the product.
+ - **Obol** (2023) --- working on Distributed Validator technology. Delivered hands-on protocol engineering for the Charon distributed validator software, as well as custom-built integrations for large-scale customers. I'm the tech lead of the Core Protocol team: I coordinated the delivery of our first fully stable and automatically-tested version Charon.
 
  - **Ignite (previously Tendermint)** (2021 - 2022) --- worked on distributed ledger technologies. Shipped the first iteration of [Emeris](https://emeris.com) backend, and some fixes to the Cosmos SDK, worked on SSI and DIDs.
 
