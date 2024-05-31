@@ -10,10 +10,11 @@ draft: false
  - **Mail**: [gsora+cv@disroot.org](mailto:gsora+cv@disroot.org)
  - **GitHub**: [https://github.com/gsora](https://github.com/gsora)
  - **Phone**: [+39 0823 16 07 814](tel:+3908231607814)
-
+ - **Blog**: [https://g7o.today](https://g7o.today)
+ 
 ## Work experience {#work-experience .unnumbered}
 
- - **Obol** (2023) --- working Distributed Validator technology. Delivered backend solution and hands-on protocol engineering for the Charon distributed validator client software, as well as back-end engineering for soon-to-be announced products. Tech leading the Core Protocol team, and delivered the first fully automatically-tested, stable version of the product.
+ - **Obol** (2023) --- working Distributed Validator technology. Delivered hands-on protocol engineering for the Charon distributed validator client software, as well as back-end engineering for custom-build large-scale customers. Tech leading the Core Protocol team, and delivered the first fully automatically-tested, stable version of the product.
 
  - **Ignite (previously Tendermint)** (2021 - 2022) --- worked on distributed ledger technologies. Shipped the first iteration of [Emeris](https://emeris.com) backend, and some fixes to the Cosmos SDK, worked on SSI and DIDs.
 
