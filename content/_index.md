@@ -1,3 +1,6 @@
+---
+share: true
+---
 # 👋
 
 <script data-goatcounter="https://gsora.goatcounter.com/count"
@@ -18,8 +21,6 @@ I'm a [software developer](https://github.com/gsora) living in sunny Italy, curr
 
 In my free time I usually go out for bike rides --- on trails, at bike parks --- or hack on side-projects, either physical or digital ones.
 
-The best way to reach me is by beaming a [*digital postcard*](mailto:gsora+nsc@disroot.org), making sure to attach a cute picture of your pet 🐕
-
-If you wanna talk business you can find an **updated curriculum vitae** [here](/cv). 
+You can find an **updated curriculum vitae** [here](/cv.pdf). 
 
 <a rel="me" style="display: none;" href="https://nso.group/@gsora">Mastodon</a>

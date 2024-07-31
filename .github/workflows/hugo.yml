@@ -16,11 +16,6 @@ jobs:
         with:
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Build CV pdf
-        uses: docker://pandoc/latex:latest
-        with:
-          args: content/cv/index.md  --template content/cv/latex.template --pdf-engine xelatex -V geometry:margin=1in  -o static/cv.pdf
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
